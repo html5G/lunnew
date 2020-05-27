@@ -1,0 +1,79 @@
+/* miniprogram/pages/money/money.wxss */
+.money{
+  margin: 0;
+  padding: 0;
+}
+.money-pll{
+  height: 150rpx;
+  width: 94%;
+  border-radius: 25rpx;
+  display: flex;
+  border: 1px solid #777752;
+  margin-top: 16rpx;
+  margin-left: 20rpx;
+  background-color: antiquewhite;
+}
+.money-pll-0 {
+  flex-direction: column;
+}
+.money-pll-1 {
+  /* overflow: hidden; */
+  padding-left: 6rpx;
+  font-size: 40rpx;
+}
+.money-pll-2 {
+  padding-left: 6rpx;
+  font-size: 25rpx;
+  margin-top: 10rpx;
+}
+.money-pll-6 {
+  margin-left: 26rpx;
+}
+.money-pll-3 {
+  background-color: aqua;
+  border: 1rpx solid #777752;
+  border-radius: 16rpx;
+  height: 60rpx;
+  width: 115rpx;
+  text-align: center;
+  font-size: 36rpx;
+}
+.money-pll-4 {
+  display: flex;
+  margin-top: 42rpx;
+  /* margin-left: 120rpx; */
+  position: absolute;
+  right: 0;
+  margin-right: 34rpx;
+}
+.money-view {
+  width: 94%;
+  display: flex;
+  margin-top: 40rpx;
+  margin-left: 20rpx;
+  border-radius: 25rpx;
+  border: 1px solid #fcfbfb;
+  background-color: #fcfbfb;
+}
+.money-view-1 {
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: 20rpx;
+}
+.money-viewImg {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 25rpx;
+}
+.money-view-2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+.money-viewMon {
+  margin-top: 52rpx;
+  color: red;
+}
+.money-viewTeT {
+  text-align: center;
+}

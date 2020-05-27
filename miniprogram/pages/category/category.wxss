@@ -1,0 +1,54 @@
+/* miniprogram/pages/category/category.wxss */
+.category {
+  margin:0;
+  padding: 0;
+}
+.tab {
+  padding: 10rpx 0;
+}
+.topTabSwiper {
+  display: flex;
+  border-top: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
+  justify-content: space-around;
+}
+.topTabSwiper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.tabBorer {
+  border-bottom: 1px solid #ff0022;
+  color: #ff0022;
+}
+.newest{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40rpx;
+  padding-top: 16rpx;
+  overflow: hidden;
+}
+.newest-list {
+  margin: 0 20rpx 20rpx 0;
+  background-color: #d3d3d3;
+  border-radius: 30rpx;
+}
+.list-image {
+  width: 309rpx;
+  height: 464rpx;
+  border-radius: 30rpx;
+  flex-wrap: wrap;
+}
+.newest-text {
+  text-align: center;
+}
+.newest-text-1 {
+  text-align: center;
+}
+navigator {
+  border-radius: 30rpx;
+}
+.title {
+  font-size: 20rpx;
+  text-align: center;
+}

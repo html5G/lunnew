@@ -1,0 +1,54 @@
+<!-- index.wxml -->
+<view class="main">
+
+	<swiper indicator-dots="true" indicator-color="#0094ff" indicator-active-color="rgba(230, 142, 10)" autoplay="true" interval="3000" duration="300" circular="true">
+		<block wx:for="{{PageArroy.PageMain}}" wx:key="index">
+			<navigator url="../list/list?describe={{item.describe}}&openid={{item.openid}}&money={{item.money}}&CodeID={{item.CodeID}}&ImageUrl={{item.ImageUrl}}">
+				<swiper-item>
+					<image src="{{item.ImageUrl}}" class="slide-image" width="100%" />
+				</swiper-item>
+			</navigator>
+		</block>
+	</swiper>
+	<view class="newest">
+		<view class="newest-title">
+			<text>最近新品</text>
+		</view>
+		<view class="newest-box">
+			<view class="newest-list ">
+				<view bindtap="bindtapNavigator">
+					<image class="list-image" src="/images/s7.png"></image>
+					<view class="newest-text">
+						<text>发布新品</text>
+					</view>
+					<view class="newest">
+						<text>4444</text>
+					</view>
+				</view>
+			</view>
+			<view class="newest-list" wx:for="{{PageArroy.PagesIndex}}" wx:key="index" data-id="{{item.CodeID}}">
+				<navigator url="../list/list?describe={{item.describe}}&openid={{item.openid}}&money={{item.money}}&CodeID={{item.CodeID}}&ImageUrl={{item.ImageUrl}}" bindtap="bindList">
+					<image lazy-load="true" class="list-image" src="{{item.ImageUrl}}"></image>
+					<view class="newest-text">
+						<text>{{item.describe}}</text>
+					</view>
+					<view class="newest">
+						<text>￥{{item.money}}</text>
+					</view>
+				</navigator>
+			</view>
+			<view class="newest-list ">
+				<image class="list-image" src="/images/s7.png"></image>
+				<view class="newest-text">
+					<text>更多期待</text>
+				</view>
+				<view class="newest">
+					<text>4444</text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="title">
+		<text>我也是有底线的哦！</text>
+	</view>
+</view>

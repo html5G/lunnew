@@ -1,0 +1,9 @@
+<!--miniprogram/pages/login/login.wxml-->
+<view class="login">
+	<view class="login-1">
+		<open-data class="loginimg" type="userAvatarUrl"></open-data>
+	</view>
+	<button class="login-te" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+		<text class="text">登录</text>
+	</button>
+</view>

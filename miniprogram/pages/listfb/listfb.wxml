@@ -1,0 +1,53 @@
+<!--miniprogram/pages/listfb/listfb.wxml-->
+<view class="listfb">
+	<view class="listfb-list">
+		<view class="listfb-describe">
+			<input placeholder="描述你的宝贝一下吧" value="" adjust-position="false" bindinput="bindinputListfb"></input>
+		</view>
+		<view><text>选择你的属性:</text>
+			<radio-group class="listfb-radio" bindchange="bindchangeListfb">
+				<label class="listfb-label" wx:for="{{items}}" wx:key="index">
+					<radio class="listfb-label-1" value="{{item.identity}}" checked="{{item.checked}}">{{item.describe}}</radio>
+				</label>
+			</radio-group>
+		</view>
+		<view class="page__bd">
+			<view class="weui-cells">
+				<view class="weui-cell">
+					<view class="weui-cell__bd">
+						<view class="weui-uploader">
+							<view class="weui-uploader__hd">
+								<view class="weui-uploader__title" >上传一张美美的商品照吧</view>
+								<view class="weui-uploader__info">{{files.length}}/1</view>
+							</view>
+							<view class="weui-uploader__bd">
+								<view class="weui-uploader__files" id="uploaderFiles">
+									<block wx:for="{{files}}" wx:key="*this">
+										<view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+											<image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+										</view>
+									</block>
+								</view>
+								<view class="weui-uploader__input-box">
+									<view class="weui-uploader__input" disabled="{{chooseImage}}" bindtap="chooseImage">
+									</view>
+								</view>
+								<view class="weui-uploader__input-box">
+									<view class="weui-uploader__input"  bindtap="chooseImageNO">
+									</view>
+								</view>
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="listfb-describe">
+			<input placeholder="你的商品准备卖多少钱？" value="" adjust-position="false" bindinput="bindinputListfbMoney"></input>
+		</view>
+		<view class="listfb-click">
+			<view class="listfb-click-1" bindtap="bindtapCancel">取消</view>
+			<view class="listfb-click-1" bindtap="bindtapRelease">发布</view>
+		</view>
+	</view>
+</view>

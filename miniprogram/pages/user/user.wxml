@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="containerL">
+	<!-- 用户 openid -->
+	<view>
+		<button class="containerUser" bindgetuserinfo="getUserInfo" open-type="getUserInfo">
+			<view class="userinfoL">
+				<image type="primary" class="userinfoL-avatar" src="{{avatarUrl}}" />
+			</view>
+			<view class="titleN">{{name}}</view>
+			<view class="title">点击登录</view>
+		</button>
+		<view class="pull">
+			<view class="pullPush">
+				<navigator url="../ReleaseNumber/ReleaseNumber?PUSH={{PUSHItem}}">
+					<view class="number">{{PUSH}}</view>
+					<view class="Release">我发布的</view>
+				</navigator>
+			</view>
+			<view class="pullPush">
+				<navigator  url="../ReleaseNumber/ReleaseNumber?PUSH={{1}}">
+					<view class="number">{{PUSH1}}</view>
+					<view class="Release">我买到的</view>
+				</navigator>
+			</view>
+		</view>
+	</view>
+</view>

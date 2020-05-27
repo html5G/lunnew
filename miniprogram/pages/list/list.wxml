@@ -1,0 +1,24 @@
+<!--pages/list/list.wxml-->
+<view class="list">
+	<view class="listList">
+		<view class="list-image">
+			<image alt="Norway" class="listimage" src="{{ImageUrl}}"></image>
+		</view>
+		<view class="list-money">
+			<text>￥{{money}}</text>
+		</view>
+		<view class="list-describe">
+			<text>{{describe}}</text>
+		</view>
+	</view>
+	<view>
+	</view>
+	<view class="list-button">
+		<view class="list-button_A">
+			<button class="list-button-1" bindtap="bindtapa">客服</button>
+			<button class="list-button-2" bindtap="bindtapb">收藏</button>
+			<button class="list-button-3" bindtap="bindtapc">加入购物车</button>
+			<button class="list-button-4" bindtap="bindtapd">立即购买</button>
+		</view>
+	</view>
+</view>

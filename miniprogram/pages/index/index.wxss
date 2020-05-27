@@ -1,0 +1,69 @@
+.min {
+  width: 100%;
+  height: 100%;
+}
+swiper {
+  height: 421.5rpx;
+}
+swiper-item image {
+  width: 100%;
+  height: 100%;
+  border-radius: 14rpx;
+}
+.select-title, .newest-title {
+  width: 100%;
+  padding: 30rpx 0;
+  text-align: center;
+}
+.select-top-small {
+  margin-left: 18rpx;
+  width: 350rpx;
+  height: 350rpx;
+  float: left;
+}
+.select-bottom,.select-top {
+  width: 100%;
+  height: 375rpx;
+}
+.select-top-small image, .select-bottom image, .select-top-small navigator,.select-bottom navigator {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 30rpx;
+}
+.newest-box{
+  padding:0 50rpx;
+}
+.newest-box .newest-list{
+    display: inline-block;
+    margin:0 20rpx 20rpx 0;
+    border-radius: 30rpx;
+    text-align: center;
+    overflow: hidden;
+    background-color: #d3d3d3;
+} 
+.newest-box .newest-list-1 {
+    display: inline-block;
+    margin:0 20rpx 20rpx 0;
+    border-radius: 10px;
+    text-align: center;
+}
+.title {
+  font-size: 20rpx;
+  text-align: center;
+}
+.newest-box .newest-list:nth-child(2n){
+    margin-right: 0;
+}
+.newest-box .newest-list .list-image{
+    width: 309rpx;
+    height: 464rpx;
+    border-radius: 30rpx;
+}
+.newest-box .newest-list .newest-text{
+    font-size: 32rpx;
+}
+.newest-box .newest-list .newest-text-1{
+  font-size: 32rpx;
+  margin-top: 27rpx;
+}

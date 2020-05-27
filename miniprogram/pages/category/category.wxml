@@ -1,0 +1,27 @@
+<!--miniprogram/pages/category/category.wxml-->
+<view class="category">
+	<view class='topTabSwiper'>
+		<view class='tab  {{currentData == 0 ? "tabBorer" : ""}}' data-current="0" bindtap='checkCurrent'>数码</view>
+		<view class='tab  {{currentData == 1 ? "tabBorer" : ""}}' data-current="1" bindtap='checkCurrent'>乐器</view>
+		<view class='tab  {{currentData == 2 ? "tabBorer" : ""}}' data-current="2" bindtap='checkCurrent'>体育</view>
+		<view class='tab  {{currentData == 3 ? "tabBorer" : ""}}' data-current="3" bindtap='checkCurrent'>图书</view>
+		<view class='tab  {{currentData == 4 ? "tabBorer" : ""}}' data-current="4" bindtap='checkCurrent'>其他</view>
+	</view>
+	<view class="newest">
+		<view class="newest-list" duration="300" current="{{currentData}}" wx:for="{{PageCurrentData.PagesIndex}}" wx:key="index" wx:if="{{item.identity === currentData}}">
+			<navigator url="../list/list?describe={{item.describe}}&money={{item.money}}&ImageUrl={{item.ImageUrl}}">
+				<image class="list-image" src="{{item.ImageUrl}}"></image>
+				<view class="newest-text">
+					<text>{{item.describe}}</text>
+				</view>
+				<view class="newest-text-1">
+					<text>￥{{item.money}}</text>
+				</view>
+			</navigator>
+		</view>
+	</view>
+
+	<view class="title">
+		<text>我也是有底线的哦</text>
+	</view>
+</view>

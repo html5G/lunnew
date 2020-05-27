@@ -1,0 +1,23 @@
+<!--miniprogram/pages/cart/cart.wxml-->
+<view class="cart">
+	<view class="cart-1">
+		<checkbox-group bindchange="checkboxChange" wx:for="{{PageSindexP}}" wx:key="index" data-index='{{index}}' class="cart-2">
+			<checkbox value='{{item.money}}'>
+				<view class="image1">
+					<image class="image" src="{{item.ImageUrl}}"></image>
+					<!-- </view> -->
+					<view class="describe">
+						<text class="text">{{item.describe}}</text>
+						<text class="money">￥:{{item.money}}</text>
+					</view>
+				</view>
+			</checkbox>
+		</checkbox-group>
+	</view>
+	<view class="cartmax">
+		<view class="cartmax-1">总价格:
+			<text class="money">{{PAHE}}</text>
+		</view>
+		<view class="button" bindtap="button">去支付--></view>
+	</view>
+</view>

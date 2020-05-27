@@ -1,0 +1,28 @@
+<!--miniprogram/pages/money/money.wxml-->
+<view class="money">
+	<view class="money-pll">
+		<view class="money-pll-0">
+			<view class="money-pll-1">
+				<text>{{userName}}</text>
+				<text class="money-pll-6">{{telNumber}}</text>
+			</view>
+			<view class="money-pll-2">
+				<text>地址：{{provinceName}}{{cityName}}{{countyName}}{{detailInfo}}</text>
+			</view>
+		</view>
+		<view class="money-pll-4" bindtap="moneypull">
+			<text class="money-pll-3">编辑</text>
+		</view>
+	</view>
+	<view class="money-view">
+		<view class="money-view-1">
+			<image class="money-viewImg" src="{{ImageUrl}}"></image>
+		</view>
+		<view class="money-view-2">
+			<text class="money-viewTeT">{{describe}}</text>
+			<text class="money-viewMon">￥:{{money}}</text>
+		</view>
+	</view>
+  <view class="money-pull">
+  </view>
+</view>

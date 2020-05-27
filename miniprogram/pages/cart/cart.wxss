@@ -1,0 +1,51 @@
+/* miniprogram/pages/cart/cart.wxss */
+.cart {
+  margin: 0;
+  padding: 0;
+}
+.cart-1 {
+  height: 100%;
+  width: 96%;
+}
+.cart-2 {
+  border: 1px solid #9e9c9c;
+  border-radius: 25rpx;
+  margin-top: 20rpx;
+}
+.image1 {
+  display: flex;
+  margin-left: 10rpx;
+}
+.image {
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 12rpx;
+}
+.describe {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rpx;
+}
+.text {
+  margin-left: 10rpx;
+}
+.money {
+  color: red;
+}
+.cartmax  {
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  border: 1px solid #9e9c9c;
+  border-radius: 2rpx;
+  margin-top: 20rpx;
+  display: flex;
+}
+.cartmax-1 {
+  /* right: 0; */
+  margin-left: 25rpx;
+}
+.button {
+  margin-left: 370rpx;
+}

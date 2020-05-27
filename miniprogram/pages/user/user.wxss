@@ -1,0 +1,54 @@
+/**index.wxss**/
+.containerL {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(233, 12, 12, 0.671)
+
+}
+.containerUser {
+  display: flex;
+  width: 97%;
+  border-radius: 15px;
+  margin-left: 10rpx;
+  margin-top: 15rpx;
+  background: #a1a1a1;
+}
+.userinfoL {
+  display: flex;
+}
+.userinfoL-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx;
+  background-size: cover;
+  background-color: #ffffff;
+}
+.titleN {
+  font-size: 40rpx;
+}
+.title {
+  font-size: 45rpx;
+  margin-left: 140rpx;
+  margin-top: 10rpx;
+}
+.pull {
+  display: flex;
+  justify-content: space-around;
+  width: 85%;
+  background-color: rgb(255, 255, 255);
+  margin-top: 20rpx;
+  margin-left: 58rpx;
+  /* border-bottom-left-radius: 25rpx; */
+  border-top-left-radius: 25rpx;
+ border-top-right-radius: 25rpx;
+
+}
+.pullPush {
+text-align: center;
+}
+.number {
+  font-size: 40rpx;
+}
+
+
+
